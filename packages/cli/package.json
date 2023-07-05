@@ -1,11 +1,11 @@
 {
-  "name": "bhailang",
+  "name": "emojilang",
   "version": "0.1.0",
   "description": "CLI for bhai-lang",
   "source": "src/index.ts",
   "main": "bin/index.js",
   "bin": {
-    "bhailang": "./bin/index.js"
+    "emojilang": "./bin/index.js"
   },
   "files": [
     "bin"
@@ -21,7 +21,7 @@
   "keywords": [
     "programming",
     "language",
-    "bhai-lang",
+    "emoji-lang",
     "bl",
     "javascript",
     "typescript"

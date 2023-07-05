@@ -1,8 +1,6 @@
 import { Spec } from "../../constants/bhaiLangSpec";
 import InvalidStateException from "../../exceptions/invalidStateException";
-
 import { Token, Tokenizer } from "./types";
-
 
 export default class TokenizerImpl implements Tokenizer {
   private _spec: Spec;
@@ -31,12 +29,28 @@ export default class TokenizerImpl implements Tokenizer {
     return this._cursor < this._string.length;
   }
 
+  // replaceEmojisWithUnicode(text: string) {
+  //   const emojiMappings: any = {
+  //     "🤚": "\u{1F91A}",
+  //     "✏️": "\u270F\uFE0F",
+  //     "👉": "\u{1F914}",
+  //     "👀": "\u{1F440}",
+  //     "🧿": "\u{1F441}\uFE0F",
+  //     "👁️": "\u{1F9FF}",
+  //     "🫢": "\u{1F501}",
+  //     "🔁": "\u270A",
+  //     "✊": "\u{1F494}",
+  //     "💔": "\u{1F4B0}",
+  //   };
+
+  //   return text.replace(/([\uD800-\uDBFF][\uDC00-\uDFFF])/g, (match) => {
+  //     const emoji = emojiMappings[match];
+  //     return emoji ? emoji : match;
+  //   });
+  // }
+
   getNextToken(): Token | null {
-    if (!this._string)
-      throw new InvalidStateException(
-        "Tokenizer is not initialized with string. " +
-          "Please call initTokenizer method first."
-      );
+    if (!this._string) throw new InvalidStateException("Tokenizer is not initialized with string. " + "Please call initTokenizer method first.");
 
     if (!this.hasMoreTokens()) {
       return null;
@@ -61,7 +75,7 @@ export default class TokenizerImpl implements Tokenizer {
       };
     }
 
-    throw new SyntaxError(`Kya kar rha hai tu??...Unexpected token: "${string[0]}"`);
+    throw new SyntaxError(`WTH Bro??...Unexpected token: "${string[0]}"`);
   }
 
   _matched(regex: RegExp, string: string) {

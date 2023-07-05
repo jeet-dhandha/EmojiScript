@@ -1,7 +1,7 @@
 name: New Issue
 description: Description
 title: "Title "
-labels: ["bhai-lang"]
+labels: ["emoji-lang"]
 body:
   - type: markdown
     attributes:

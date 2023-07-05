@@ -6,23 +6,15 @@ import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 
 console.info(
-  chalk.hex("#83aaff")(`
-██████╗░██╗░░██╗░█████╗░██╗██╗░░░░░░█████╗░███╗░░██╗░██████╗░
-██╔══██╗██║░░██║██╔══██╗██║██║░░░░░██╔══██╗████╗░██║██╔════╝░
-██████╦╝███████║███████║██║██║░░░░░███████║██╔██╗██║██║░░██╗░
-██╔══██╗██╔══██║██╔══██║██║██║░░░░░██╔══██║██║╚████║██║░░╚██╗
-██████╦╝██║░░██║██║░░██║██║███████╗██║░░██║██║░╚███║╚██████╔╝
-╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░
-
-https://github.com/DulLabs/bhai-lang
-`)
+  chalk.hex("#83aaff")(``)
 );
 
 const cl = console.log;
 
 console.log = function (...args) {
   const newArgs = args.map((arg) => {
-    return `${chalk.hex("#83aaff")(">  ")}${chalk.greenBright(arg)}`;
+    // return `${chalk.hex("#83aaff")(">  ")}${chalk.greenBright(arg)}`;
+    return `${chalk.hex("#83aaff")("")}${chalk.greenBright(arg)}`;
   });
   cl.apply(console, newArgs);
 };

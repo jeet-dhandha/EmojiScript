@@ -20,7 +20,7 @@ const CodeEditor = (props: Props) => {
   const { handleChange, code } = props;
 
   const highlightWithLineNumbers = (input: string) =>
-    highlight(input, bhaiLangSyntax, "bhaiLang")
+    highlight(input, bhaiLangSyntax, "emojilang")
       .split("\n")
       .map((line, i) => `<span class='editorLineNumber'>${i + 1}</span>${line}`)
       .join("\n");

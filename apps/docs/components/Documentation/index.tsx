@@ -7,17 +7,17 @@ const features = [
     name: "General",
     description: (
       <>
-        <code className="language-cpp">hi bhai</code> is the entrypoint for the
+        <code className="language-cpp">🤚</code> is the entrypoint for the
         program and all program must end with{" "}
-        <code className="language-cpp">bye bhai</code>. Anything outside of it
+        <code className="language-cpp">🤚</code>. Anything outside of it
         will be ignored.
       </>
     ),
     code: `This will be ignored
 
-hi bhai
+🤚
   // Write code here
-bye bhai
+🤚
 
 This too
     `,
@@ -27,17 +27,17 @@ This too
     description: (
       <>
         Variables can be declared using{" "}
-        <code className="language-cpp">bhai ye hai</code>.
+        <code className="language-cpp">👉</code>.
       </>
     ),
-    code: `hi bhai
-    bhai ye hai a = 10;
-    bhai ye hai b = "two";
-    bhai ye hai c = 15;
+    code: `🤚
+    👉 a = 10;
+    👉 b = "two";
+    👉 c = 15;
     a = a + 1;
     b = 21;
     c *= 2;
-bye bhai
+🤚
     `,
   },
   {
@@ -45,83 +45,83 @@ bye bhai
     description: (
       <>
         Numbers and strings are like other languages. Null values can be denoted
-        using <code className="language-cpp">nalla</code>.{" "}
-        <code className="language-cpp">sahi</code> and{" "}
-        <code className="language-cpp">galat</code> are the boolean values.
+        using <code className="language-cpp">🫢</code>.{" "}
+        <code className="language-cpp">true</code> and{" "}
+        <code className="language-cpp">false</code> are the boolean values.
       </>
     ),
-    code: `hi bhai
-    bhai ye hai a = 10;
-    bhai ye hai b = 10 + (15*20);
-    bhai ye hai c = "two";
-    bhai ye hai d = 'ok';
-    bhai ye hai e = nalla;
-    bhai ye hai f = sahi;
-    bhai ye hai g = galat;
-bye bhai
+    code: `🤚
+    👉 a = 10;
+    👉 b = 10 + (15*20);
+    👉 c = "two";
+    👉 d = 'ok';
+    👉 e = 🫢;
+    👉 f = true;
+    👉 g = false;
+🤚
     `,
   },
   {
     name: "Built-ins",
     description: (
       <>
-        Use <code className="language-cpp">bol bhai</code> to print anything to
+        Use <code className="language-cpp">✏️</code> to print anything to
         console.
       </>
     ),
-    code: `hi bhai
-    bol bhai "Hello World";
-    bhai ye hai a = 10;
+    code: `🤚
+    ✏️ "Hello World";
+    👉 a = 10;
     {
-       bhai ye hai b = 20;
-       bol bhai a + b;
+       👉 b = 20;
+       ✏️ a + b;
     }
-    bol bhai 5, 'ok', nalla , sahi , galat;
-bye bhai
+    ✏️ 5, 'ok', 🫢 , true , false;
+🤚
     `,
   },
   {
     name: "Conditionals",
     description: (
       <>
-        Bhailang supports if-else-if ladder construct , <code className="language-cpp">agar bhai</code> block will execute if condition is <code className="language-cpp">sahi</code>, otherwise one of the subsequently added <code className="language-cpp">nahi to bhai</code> blocks will execute if their respective condition is <code className="language-cpp">sahi</code>, and the <code className="language-cpp">warna bhai</code> block will eventually execute if all of the above conditions are <code className="language-cpp">galat</code>.
+        Bhailang supports if-else-if ladder construct , <code className="language-cpp">👀</code> block will execute if condition is <code className="language-cpp">true</code>, otherwise one of the subsequently added <code className="language-cpp">🧿</code> blocks will execute if their respective condition is <code className="language-cpp">true</code>, and the <code className="language-cpp">👁️</code> block will eventually execute if all of the above conditions are <code className="language-cpp">false</code>.
       </>
     ),
-    code: `hi bhai
-    bhai ye hai a = 10;
-    agar bhai (a < 20) {
-      bol bhai "a is less than 20";
-    } nahi to bhai ( a < 25 ) {
-      bol bhai "a is less than 25";
-    } warna bhai {
-      bol bhai "a is greater than or equal to 25";
+    code: `🤚
+    👉 a = 10;
+    👀 (a < 20) {
+      ✏️ "a is less than 20";
+    } 🧿 ( a < 25 ) {
+      ✏️ "a is less than 25";
+    } 👁️ {
+      ✏️ "a is greater than or equal to 25";
     }
-bye bhai
+🤚
     `
   },
   {
     name: "Loops",
     description: (
       <>
-        Statements inside <code className="language-cpp">jab tak bhai</code> blocks are executed as long as a specified condition evaluates to <code className="language-cpp">sahi</code>. If the condition becomes <code className="language-cpp">galat</code>, statement within the loop stops executing and control passes to the statement following the loop. 
-        Use <code className="language-cpp">bas kar bhai</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.
+        Statements inside <code className="language-cpp">🔁</code> blocks are executed as long as a specified condition evaluates to <code className="language-cpp">true</code>. If the condition becomes <code className="language-cpp">false</code>, statement within the loop stops executing and control passes to the statement following the loop. 
+        Use <code className="language-cpp">🙏🏻</code> to break the loop and <code className="language-cpp">💔</code> to continue within loop.
       </>
     ),
-    code: `hi bhai
-    bhai ye hai a = 0;
-    jab tak bhai (a < 10) {
+    code: `🤚
+    👉 a = 0;
+    🔁 (a < 10) {
       a += 1;
-      agar bhai (a == 5) {
-        bol bhai "andar se bol bhai ", a;
-        agla dekh bhai;
+      👀 (a == 5) {
+        ✏️ "andar se ✏️ ", a;
+        💔;
       }
-      agar bhai (a == 6) {
-        bas kar bhai;
+      👀 (a == 6) {
+        🙏🏻;
       }
-      bol bhai a;
+      ✏️ a;
     }
-    bol bhai "done";
-bye bhai
+    ✏️ "done";
+🤚
     `
   }
 

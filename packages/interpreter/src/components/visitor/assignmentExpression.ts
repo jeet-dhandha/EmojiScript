@@ -30,7 +30,7 @@ export default class AssignmentExpression implements Visitor {
 
       if (left === null && node.operator !== "=")
         throw new NallaPointerException(
-          `Nalla operand ni jamta "${node.operator}" ke sath`
+          `🫢 operand ni jamta "${node.operator}" ke sath`
         );
 
       if ((left === true || left === false) && node.operator !== "=")

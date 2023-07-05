@@ -1,27 +1,38 @@
 export const TokenTypes = {
   NULL_TYPE: null,
+  // HI_BHAI_TYPE: "\u{1F91A}",
+  // BYE_BHAI_TYPE: "\u{1F91A}",
+  // BOL_BHAI_TYPE: "\u270F\uFE0F",
+  // BHAI_YE_HAI_TYPE: "\u{1F914}",
+  // AGAR_BHAI: "\u{1F440}",
+  // WARNA_BHAI: "\u{1F441}\uFE0F",
+  // NAHI_TO_BHAI: "\u{1F9FF}",
+  // JAB_TAK_BHAI: "\u{1F501}",
+  // BAS_KAR_BHAI: "\u270A",
+  // AGLA_DEKH_BHAI: "\u{1F494}",
+  // NALLA_TYPE: "\u{1F4B0}",
+  
+HI_BHAI_TYPE: "🤚",
 
-  HI_BHAI_TYPE: "hi bhai",
+  BYE_BHAI_TYPE: "🤚",
 
-  BYE_BHAI_TYPE: "bye bhai",
+  BOL_BHAI_TYPE: "✏️",
 
-  BOL_BHAI_TYPE: "bol bhai",
+  BHAI_YE_HAI_TYPE: "👉",
 
-  BHAI_YE_HAI_TYPE: "bhai ye hai",
+  AGAR_BHAI: "👀",
 
-  AGAR_BHAI: "agar bhai",
+  WARNA_BHAI: "👁️",
 
-  WARNA_BHAI: "warna bhai",
+  NAHI_TO_BHAI: "🧿",
 
-  NAHI_TO_BHAI: "nahi to bhai",
+  JAB_TAK_BHAI: "🔁",
 
-  JAB_TAK_BHAI: "jab tak bhai",
+  BAS_KAR_BHAI: "✊",
 
-  BAS_KAR_BHAI: "bas kar bhai",
+  AGLA_DEKH_BHAI: "💔",
 
-  AGLA_DEKH_BHAI: "agla dekh bhai",
-
-  NALLA_TYPE: "NALLA",
+  NALLA_TYPE: "🫢",
 
   SEMI_COLON_TYPE: ";",
 
@@ -79,24 +90,48 @@ export const SPEC = [
   { regex: /^,/, tokenType: TokenTypes.COMMA_TYPE },
 
   //Keywords
-  { regex: /^\bhi bhai\b/, tokenType: TokenTypes.HI_BHAI_TYPE },
-  { regex: /^\bbye bhai\b/, tokenType: TokenTypes.BYE_BHAI_TYPE },
-  { regex: /^\bbol bhai\b/, tokenType: TokenTypes.BOL_BHAI_TYPE },
-  { regex: /^\bbhai ye hai\b/, tokenType: TokenTypes.BHAI_YE_HAI_TYPE },
-  { regex: /^\bagar bhai\b/, tokenType: TokenTypes.AGAR_BHAI },
-  { regex: /^\bnahi to bhai\b/, tokenType: TokenTypes.NAHI_TO_BHAI },
-  { regex: /^\bwarna bhai\b/, tokenType: TokenTypes.WARNA_BHAI },
-  { regex: /^\bnalla\b/, tokenType: TokenTypes.NALLA_TYPE },
-  { regex: /^\bjab tak bhai\b/, tokenType: TokenTypes.JAB_TAK_BHAI },
-  { regex: /^\bbas kar bhai\b/, tokenType: TokenTypes.BAS_KAR_BHAI },
-  { regex: /^\bagla dekh bhai\b/, tokenType: TokenTypes.AGLA_DEKH_BHAI },
+  // { regex: /^\b🤚\b/, tokenType: TokenTypes.HI_BHAI_TYPE },
+  // { regex: /^\b🤚\b/, tokenType: TokenTypes.BYE_BHAI_TYPE },
+  // { regex: /^\b✏️\b/, tokenType: TokenTypes.BOL_BHAI_TYPE },
+  // { regex: /^\b👉\b/, tokenType: TokenTypes.BHAI_YE_HAI_TYPE },
+  // { regex: /^\b👀\b/, tokenType: TokenTypes.AGAR_BHAI },
+  // { regex: /^\b🧿\b/, tokenType: TokenTypes.NAHI_TO_BHAI },
+  // { regex: /^\b👁️\b/, tokenType: TokenTypes.WARNA_BHAI },
+  // { regex: /^\b🫢\b/, tokenType: TokenTypes.NALLA_TYPE },
+  // { regex: /^\b🔁\b/, tokenType: TokenTypes.JAB_TAK_BHAI },
+  // { regex: /^\b✊\b/, tokenType: TokenTypes.BAS_KAR_BHAI },
+  // { regex: /^\b💔\b/, tokenType: TokenTypes.AGLA_DEKH_BHAI },
+
+  { regex: /^🤚/, tokenType: TokenTypes.HI_BHAI_TYPE },
+  { regex: /^🤚/, tokenType: TokenTypes.BYE_BHAI_TYPE },
+  { regex: /^✏️/, tokenType: TokenTypes.BOL_BHAI_TYPE },
+  { regex: /^👉/, tokenType: TokenTypes.BHAI_YE_HAI_TYPE },
+  { regex: /^👀/, tokenType: TokenTypes.AGAR_BHAI },
+  { regex: /^🧿/, tokenType: TokenTypes.NAHI_TO_BHAI },
+  { regex: /^👁️/, tokenType: TokenTypes.WARNA_BHAI },
+  { regex: /^🫢/, tokenType: TokenTypes.NALLA_TYPE },
+  { regex: /^🔁/, tokenType: TokenTypes.JAB_TAK_BHAI },
+  { regex: /^✊/, tokenType: TokenTypes.BAS_KAR_BHAI },
+  { regex: /^💔/, tokenType: TokenTypes.AGLA_DEKH_BHAI },
+
+  // { regex: /^\b\u{1F91A}\b/, tokenType: TokenTypes.HI_BHAI_TYPE },
+  // { regex: /^\b\u{1F91A}\b/, tokenType: TokenTypes.BYE_BHAI_TYPE },
+  // { regex: /^\b\u270F\uFE0F\b/, tokenType: TokenTypes.BOL_BHAI_TYPE },
+  // { regex: /^\b\u{1F914}\b/, tokenType: TokenTypes.BHAI_YE_HAI_TYPE },
+  // { regex: /^\b\u{1F440}\b/, tokenType: TokenTypes.AGAR_BHAI },
+  // { regex: /^\b\u{1F441}\uFE0F\b/, tokenType: TokenTypes.NAHI_TO_BHAI },
+  // { regex: /^\b\u{1F9FF}\b/, tokenType: TokenTypes.WARNA_BHAI },
+  // { regex: /^\b\u{1F501}\b/, tokenType: TokenTypes.NALLA_TYPE },
+  // { regex: /^\b\u270A\b/, tokenType: TokenTypes.JAB_TAK_BHAI },
+  // { regex: /^\b\u{1F494}\b/, tokenType: TokenTypes.BAS_KAR_BHAI },
+  // { regex: /^\b\u{1F4B0}\b/, tokenType: TokenTypes.AGLA_DEKH_BHAI },
 
   // Number
   { regex: /^[+-]?([\d]*[.])?[\d]+/, tokenType: TokenTypes.NUMBER_TYPE },
 
   // Boolean
-  { regex: /^\bsahi\b/, tokenType: TokenTypes.BOOLEAN_TYPE },
-  { regex: /^\bgalat\b/, tokenType: TokenTypes.BOOLEAN_TYPE },
+  { regex: /^\btrue\b/, tokenType: TokenTypes.BOOLEAN_TYPE },
+  { regex: /^\bfalse\b/, tokenType: TokenTypes.BOOLEAN_TYPE },
 
   // Identifier
   { regex: /^\w+/, tokenType: TokenTypes.IDENTIFIER_TYPE },

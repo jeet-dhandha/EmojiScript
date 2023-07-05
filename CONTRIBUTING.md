@@ -70,7 +70,7 @@ $ git push -u origin Branch_Name
 - Voila! Your Pull Request has been submitted and will be reviewed by the moderators and merged.🥳
 
 
-## Need more help?🤔
+## Need more help?👉
 You can refer to the following articles on basics of Git and Github and also contact the Project Mentors, in case you are stuck:
 - [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 - [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request)
